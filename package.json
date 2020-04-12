@@ -1,0 +1,22 @@
+{
+  "name": "newsHour",
+  "version": "1.0.0",
+  "description": "NodeJS-Mongo-Scraper app for NYT news articles",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "author": "Shishir Mishra",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "axios": "^0.18.0",
+    "cheerio": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.1",
+    "mongoose": "^5.9.7"
+  }
+}

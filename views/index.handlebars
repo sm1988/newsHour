@@ -1,0 +1,92 @@
+<div class="container">
+<h1>My News Hour</h1>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/articles">My Articles </a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<br>
+<div class="container-img"> 
+<img class="card-img-top" src="https://source.unsplash.com/tPz-uoz5RBU/1500x1325" alt="">
+  <div class="centered">
+    <h1 class="greeting" id="demo"></h1>
+    <br>
+    <a class="btn btn-primary btn-lg" href="/scrape" role="button">Get My News</a>
+
+  </div>
+
+
+</div>
+
+</div>
+
+
+<script>
+function myFunction() {
+  var greeting;
+  var time = new Date().getHours();
+  if (time < 10) {
+    greeting = "Good morning";
+  } else if (time < 20) {
+    greeting = "Good day";
+  } else {
+    greeting = "Good evening";
+  }
+  document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
