@@ -6,11 +6,14 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home </a>
+      </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/articles">My Articles <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/articles">My Articles</a>
+        <a class="nav-link" href="/saved">Saved</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -31,8 +34,8 @@
   <tbody>
 {{#each news}}
    <tr>
-      <td>{{news.title}}</td>
-      <td><a href="https://www.nytimes.com{{news.link}}">https://www.nytimes.com{{news.link}}</a></td>
+      <td>{{this.title}}</td>
+      <td><a href="https://www.nytimes.com{{this.link}}">https://www.nytimes.com{{this.link}}</a></td>
       <td><i onclick="save(this)" class="fa fa-save"></i></td>
       <td><i onclick="remove(this)" class="fa fa-trash"></i></td>
     </tr>
